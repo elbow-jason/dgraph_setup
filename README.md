@@ -1,7 +1,5 @@
 # dgraph_setup
 
-
-
 ## Run it
 
 Paste into terminal:
