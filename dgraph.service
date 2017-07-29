@@ -1,0 +1,8 @@
+
+[Unit]
+Description = Dgraph graph database
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+ExecStart = /usr/local/bin/dgraph --bindall=true --config=/var/lib/dgraph/config.yaml

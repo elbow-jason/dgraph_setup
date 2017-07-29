@@ -1,0 +1,38 @@
+# Folder in which to store exports.
+export: /var/lib/dgraph/exports
+
+# Fraction of dirty posting lists to commit every few seconds.
+gentlecommit: 0.33
+
+# RAFT ID that this server will use to join RAFT groups.
+idx: 1
+
+# Groups to be served by this instance (comma separated list, ranges are supported).
+groups: "0,1-5"
+
+# Port to run server on. (default 8080)
+port: 8080
+
+# GRPC port to run server on. (default 9080)
+grpc_port: 9080
+
+# Port used by worker for internal communication.
+workerport: 12345
+
+# If RAM usage exceeds this, we stop the world, and flush our buffers.
+# stw_ram_mb: 4000
+
+# The ratio of queries to trace.
+trace: 0.33
+
+# Directory to store posting lists.
+p: /var/lib/dgraph/data/p
+
+# Directory to store raft write-ahead logs.
+w: /var/lib/dgraph/data/w
+
+# Debug mode for testing.
+debugmode: false
+
+# Set memory_mb
+memory_mb: 1400
